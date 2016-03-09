@@ -8,12 +8,13 @@
     while ( ($row=readdir($dh)) !== false) {
       echo $row,'<br>';
 
-      
-
-      if (is_dir('$path' . '/' . '$row')) {
-        printdir('$path' . '/' . '$row');
+      if ($row == '.' || $row == '..') {
+        continue;
       }
 
+      if (is_dir($path . '/' . $row)) {
+        printdir($path . '/' . $row);
+      }
   }
 
   closedir($dh);
@@ -21,7 +22,5 @@
 
   $path = '.';
   printdir($path);
-
-
 
  ?>
