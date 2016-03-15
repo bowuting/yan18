@@ -5,6 +5,8 @@
   {
     $dh = opendir($path);
 
+
+    //返回目录中下一个文件的文件名。文件名以在文件系统中的排序返回。
     while ( ($row=readdir($dh)) !== false) {
       echo $row,'<br>';
 
