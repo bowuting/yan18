@@ -14,6 +14,7 @@ $rs = mysql_query($sql,$conn);
 while($row = mysql_fetch_assoc($rs)){
   print_r($row);
 
+
 }
 
 
