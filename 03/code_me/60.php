@@ -4,6 +4,7 @@
 //开始留言
 //连接MySQL
 //先建表：
+
 /*
 create table liuyan(
  id int auto_increment primary key,
@@ -31,12 +32,5 @@ if(mysql_query($sql,$conn))
 }else{
     echo "留言失败";
 }
-
-
-
-
-
-
-
 
  ?>
