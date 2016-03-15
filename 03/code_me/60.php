@@ -15,15 +15,15 @@ create table liuyan(
 
 //开始连接：
 $conn = mysql_connect('localhost','root','root');
-//if($conn !== false)
-//  echo "nice";
+if($conn !== false)
+  echo "nice","<br>";
 
 mysql_query('use test',$conn);
 mysql_query('set nemes utf8',$conn);
 
 $sql = "insert into liuyan(title,content,pubtime) values(' " . $_POST['title'] ." ',' " . $_POST['content'] . "'," . time() . ")";
 
-echo $sql;
+echo $sql,"<br>";
 
 if(mysql_query($sql,$conn))
 {
