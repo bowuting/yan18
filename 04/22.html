@@ -10,22 +10,19 @@
     <img src="./imgs/boom.png" alt="" />
   </body>
   <script type="text/javascript">
-
   function  bang(){
     var img  = document.getElementsByTagName('img')[0];
     var butt = document.getElementsByTagName('input')[0];
     var time = parseInt(butt.value);
-    if(time >= 1)
       time -= 1;
     butt.value = time;
     //注意 这里的value是字符串。
     if(butt.value == 0)
     {
+      clearInterval(clock);
       img.src = "./imgs/warn.png"
     }
   }
-
-  var clock = setInterval('bang()',1000);
-
+     var clock = setInterval('bang()',1000);
   </script>
 </html>
