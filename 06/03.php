@@ -1,3 +1,6 @@
+
+    <meta charset="utf-8">
+
 <?php
 
 class People{
