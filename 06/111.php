@@ -1,7 +1,8 @@
+
 <?php
 
 header('Content-type:text/html;charset=utf-8');
-  echo "<hr />";
+
   class Human
   {
     public $name ;
@@ -10,13 +11,18 @@ header('Content-type:text/html;charset=utf-8');
     public function __destruct()
     {
         //echo $this->name,"<br />";
-        echo "析构函数","<br />";
+        echo "bowuting","<br />";
     }
   }
 
 $a = new Human;
+$b = $c = $d = $a;
 
-
-
+unset($a);
+echo "<hr />";
+/****
+问题：bowuting打印在几次
+      打印在<hr />后面还是前面
+****/
 
 ?>
