@@ -9,5 +9,5 @@
    $b = &$a;  //引用赋值
    $a = 'w';
    var_dump($a,$b);
-
+echo "test";
  ?>
