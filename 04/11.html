@@ -17,8 +17,8 @@
     </style>
     <script type="text/javascript">
       function change() {
-        var div = document.getElementById('test1'); //注意函数名字
-        div.id = 'test2';
+        var div = document.getElementsByTagName('div')[0]; //注意函数名字
+        div.id.indexOf('test1') >= 0 ? div.id = 'test2':div.id = 'test1';
       }
     </script>
   </head>

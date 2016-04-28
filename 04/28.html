@@ -61,7 +61,7 @@
       var num = 0;
 
       document.getElementsByTagName('table')[0].onclick = function(ev){
-       ev.target.style.background = num++%2 == 0 ? 'black':'white' ;
+       ev.target.style.background = num++%2 !== 0 ? 'black':'white' ;
       }
 
       /*
