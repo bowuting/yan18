@@ -62,6 +62,13 @@ var_dump($mysql->query('use test'));
  */
 class Mydb extends Mysql
 {
+  public function __construct(){
+    //return true;
+    //子类继承时，有构造函数，一般这么写，
+    //先把父类的构造函数调用一下，再写自己增加的内容
+    parent::__construct(); //如果不写 这句，会出错
+    echo "子类的构造函数<br />";
+  }
   public function autoInsert()
   {
     return $this->query('use test');
