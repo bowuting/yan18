@@ -42,7 +42,7 @@ class single
   }
 
   public static function getInstance() {
-      if (!(self::$ins instanceof self)) {
+      if (!(self::$ins instanceof self) ) {
         self::$ins  = new single();
       }
       return self::$ins;
