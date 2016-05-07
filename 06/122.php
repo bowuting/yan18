@@ -1,6 +1,7 @@
 <?php
 
 
+<<<<<<< HEAD
 /**
 *
 */
@@ -56,6 +57,9 @@ $pig = new Pig();
 $l->ons($r);
 $l->ons($b);
 $l->ons($pig);
+=======
+  echo "<p style="."color:red".">test<p/>";
+>>>>>>> a762564cc2e3cd92f26aa0a326fd356d1b349a27
 
 
 
