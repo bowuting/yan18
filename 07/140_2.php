@@ -12,10 +12,10 @@ if ($db->connect_errno) {
       echo "good<br />";
       while(!feof($fh))
       {
-        $str = fgets($fh); //fgets每次读一行~ 然后explode拆分成数组
+        $arr = fgetcsv($fh); //fgets每次读一行~ 然后explode拆分成数组
         //echo $str;
-
-        $arr = explode(',',$str);
+        print_r($arr);
+        //$arr = explode(',',$str);
       //  print_r($arr);
       //  echo $arr[0],'<br />';
       //  echo $arr[1],'<br />';
