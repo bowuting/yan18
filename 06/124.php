@@ -1,16 +1,5 @@
 <?php
-<<<<<<< HEAD
 
-
-
-
-
-
-
-
-
-
-=======
   class A{
     public function foo()
     {
