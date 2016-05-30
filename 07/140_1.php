@@ -20,7 +20,7 @@ if ($db->connect_errno) {
       //  echo $arr[0],'<br />';
       //  echo $arr[1],'<br />';
       $query = "insert into score  values ( '".$arr[0]."',".$arr[1].")";
-      //echo $query;
+      echo $query;
       $db->query($query);
       }
     }
