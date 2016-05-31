@@ -20,7 +20,4 @@ function read($path){
 read('./');
 
 
-
-
-
  ?>
