@@ -1,6 +1,6 @@
 <?php
 
-
+//递归打印多级目录，有点像tree的样子
 function read($path,$lev=1){
   $dh = opendir($path);
   while (($row = readdir($dh)) !== false) {
