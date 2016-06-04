@@ -24,6 +24,4 @@ print_r(mkdir_p('./a/b/c/d'));
 
 
 
-
-
  ?>
