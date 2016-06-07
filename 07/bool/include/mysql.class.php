@@ -1,9 +1,18 @@
 <?php
 
-class mysql extends db(){
+
+
+
+
+
+
+
+
+class mysql extends db{
     private static $ins = NULL;
     private $conn = NULL;
     private $conf = array();
+
 
     protected function __construct(){
       $this->conf = conf::getIns();
@@ -13,19 +22,20 @@ class mysql extends db(){
       $this->setChar($this->conf->char);
     }
 
-    public function __destruct(){
 
+    public function __destruct(){
     }
 
     public static function getIns(){
-      if (self::$ins === false) {
+      if (!(self::$ins instanceof self)) {
         self::$ins = new self();
       }
+
       return self::$ins;
     }
 
-    public function connect($h,$p,$u){
-      $this->conn = mysql_connect($h,$p,$u);
+    public function connect($h,$u,$p){
+      $this->conn = mysql_connect($h,$u,$p);
       if (!$this->conn) {
         $err = new Exception('连接失败');
         throw $err;
@@ -43,13 +53,9 @@ class mysql extends db(){
     }
 
     public function query($sql){
-      if ($this->conf->debug) {
-        $this->log($sql);
-      }
+
       $rs = mysql_query($sql,$this->conn);
-      if (!$rs) {
-        $this->log($this->error());
-      }
+      Log::write($sql);
       return $rs;
     }
 
@@ -58,18 +64,18 @@ class mysql extends db(){
         return false;
       }
       if($mode == 'update'){
-        $sql = 'update ' . $table . ' set';
+        $sql = 'update ' . $table . ' set ';
         foreach ($arr as $k => $v) {
-          sql .= $k . "='" . $v ."',";
+          $sql .= $k . "='" . $v ."',";
         }
-        sql = rtrim($sql,',');
-        sql .= $where;
+        $sql = rtrim($sql,',');
+        $sql .= $where;
 
         return $this->query($sql);
       }
 
-      $sql = 'insert into '. $table . ' (' . implode(',',array_keys($arr)) . ')';
-      $sql .= 'values (\'';
+      $sql  = 'insert into '. $table . ' (' . implode(',',array_keys($arr)) . ')';
+      $sql .= ' values (\'';
       $sql .= implode("','",array_vaules($arr));
       $sql .= '\')';
       return $this->query($sql);
@@ -89,12 +95,12 @@ class mysql extends db(){
     public function getRow($sql){
       $rs = $this->query($sql);
 
-      return mysql_fetch_assoc($es);
+      return mysql_fetch_assoc($rs);
     }
 
     public function getOne($sql){
       $rs = $this->query($sql);
-      $row = mysql_fetch_row($row);
+      $row = mysql_fetch_row($rs);
 
       return $row[0];
     }

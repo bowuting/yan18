@@ -1,1 +1,102 @@
 test
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boorshop
+set names utf-8
+use boolshop
+set names utf-8
+use boolshop
+set names utf-8
+use boolshop
+set names utf-8
+use boolshop
+set names utf-8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('','')
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('\'2\'?t2=\'3\'','')
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('\'2\'?t2=\'3\'','')
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('\'2\'?','')
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('dadad','dad')
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('dadad','dad')
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('dadad','dad')
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('da\'dad','dad')
+use boolshop
+set names utf8
+insert into test(t1,t2) values ('da'dad','dad')

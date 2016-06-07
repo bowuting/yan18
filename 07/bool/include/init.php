@@ -13,6 +13,7 @@ require (ROOT.'include/db.class.php');   //引入数据库类
 require (ROOT.'include/conf.class.php'); //引入配置文件类
 require (ROOT.'include/log.class.php');
 require (ROOT.'include/lib_base.php');
+require (ROOT.'include/mysql.class.php');
 
 define ('DEBUG',true);                   //定义调试模式
 if (defined('DEBUG')) {
@@ -22,11 +23,10 @@ if (defined('DEBUG')) {
 }
 
 $_GET  = _addslashes($_GET);
-$_POST = _addslashes($POST);
+$_POST = _addslashes($_POST);
 $_COOKIE = _addslashes($_COOKIE);
 
                                           //递归过滤参数  $_GET  $_POST
                                           //日志记录功能
-
 
  ?>
