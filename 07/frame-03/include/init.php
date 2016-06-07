@@ -21,7 +21,7 @@ if (defined('DEBUG')) {
   error_reporting(0);
 }
 
-//$_GET  = _addslashes($_GET);
+$_GET  = _addslashes($_GET);
 $_POST = _addslashes($POST);
 $_COOKIE = _addslashes($_COOKIE);
 
