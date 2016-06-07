@@ -12,7 +12,7 @@ YY频道: 88354001
 file config.inc.php
 配置文件
 */
-
+defined('ACC')||exit('ACC Denied');
 $_CFG = array();
 
 

@@ -14,8 +14,9 @@ YY频道: 88354001
 都得先加载init.php
 ***/
 
-require('./include/init.php');
 
+define('ACC',true);
+require('./include/init.php');
 
 /*
 我们的目的:
@@ -24,19 +25,14 @@ require('./include/init.php');
 能否正常操作数据库
 
 */
-$mysql = mysql::getIns();
+
+
+$test = new TestModel();
+var_dump($test->reg(array('t1'=>'frontuser','t2'=>'frontuser')));
 
 
 
-$t1 = $_GET['t1'];
-$t2 = $_GET['t2'];
 
-/*
-$sql = "insert into test(t1,t2) values('$t1','$t2')";
-var_dump($mysql->query($sql));
-*/
-
-var_dump($mysql->autoExecute('test',$_GET,'insert'));
 
 
 

@@ -27,16 +27,8 @@ require('./include/init.php');
 $mysql = mysql::getIns();
 
 
-
-$t1 = $_GET['t1'];
-$t2 = $_GET['t2'];
-
-/*
-$sql = "insert into test(t1,t2) values('$t1','$t2')";
-var_dump($mysql->query($sql));
-*/
-
-var_dump($mysql->autoExecute('test',$_GET,'insert'));
+$test = new TestModel();
+var_dump($test->reg(array('t1'=>'adminuser','t2'=>'adminuser')));
 
 
 

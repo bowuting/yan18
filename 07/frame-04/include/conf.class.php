@@ -14,7 +14,7 @@ file conf.class.php
 
 ***/
 
-
+defined('ACC')||exit('ACC Denied');
 class conf {
     protected static $ins = null;
     protected $data = array();

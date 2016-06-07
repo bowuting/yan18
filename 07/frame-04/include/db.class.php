@@ -14,7 +14,7 @@ file db.class.php
 
 目前到底采用什么数据库 还不清楚
 ***/
-
+defined('ACC')||exit('ACC Denied');
 abstract class db {
 
     /*

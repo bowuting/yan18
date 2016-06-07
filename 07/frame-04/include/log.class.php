@@ -26,7 +26,7 @@ file log.class.php
         否则,写入
 */
 
-
+defined('ACC')||exit('ACC Denied');
 class Log {
 
     const LOGFILE = 'curr.log'; //建一个常量,代表日志文件的名称

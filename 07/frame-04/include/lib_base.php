@@ -7,7 +7,7 @@
 YY频道: 88354001
 ****/
 
-
+defined('ACC')||exit('ACC Denied');
 
 // 递归转义数组
 function _addslashes($arr) {
