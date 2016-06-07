@@ -1,8 +1,7 @@
 <?php
 
 
-$arr = array('a"b',array("c'd",array('e"f')));
-
+//递归转义函数 
 function _addslashes($arr){
   foreach ($arr as $k => $v) {
     if(is_string($v)){
@@ -13,21 +12,6 @@ function _addslashes($arr){
   }
   return $arr;
 }
-
-
-
-print_r(_addslashes($arr));
-
-print_r($arr);
-//$a = 'adad"d';
-
-//echo addslashes($a);
-
-
-
-
-
-
 
 
  ?>
