@@ -7,7 +7,7 @@ abstract class db{
   public abstract function getAll($sql);
   public abstract function getRow($sql);
   public abstract function getOne($sql);
-  public abstract function autoExcute($stable,$data,$cat='insert',$where='');
+  public abstract function autoExecute($stable,$data,$cat='insert',$where='');
 
 
 }

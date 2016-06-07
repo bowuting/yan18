@@ -19,6 +19,14 @@ $t2 = $_GET['t2'];
 
 $sql = "insert into test(t1,t2) values ('$t1','$t2')";
 
-var_dump($mysql->query($sql));
+//var_dump($mysql->query($sql));
+
+var_dump($mysql->autoExecute('test',$_GET));
+
+
+
+
+
+
 
 ?>

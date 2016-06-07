@@ -100,3 +100,38 @@ insert into test(t1,t2) values ('da\'dad','dad')
 use boolshop
 set names utf8
 insert into test(t1,t2) values ('da'dad','dad')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('da\'dad','dad')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('da\'dad','dadd')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('da\'dad','dadd')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')

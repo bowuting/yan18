@@ -59,7 +59,7 @@ class mysql extends db{
       return $rs;
     }
 
-    public function autoExcute($arr,$table,$mode='insert',$where = 'where 1 limit 1'){
+    public function autoExecute($table,$arr,$mode='insert',$where = 'where 1 limit 1'){
       if(!is_array($arr)){
         return false;
       }
@@ -76,7 +76,7 @@ class mysql extends db{
 
       $sql  = 'insert into '. $table . ' (' . implode(',',array_keys($arr)) . ')';
       $sql .= ' values (\'';
-      $sql .= implode("','",array_vaules($arr));
+      $sql .= implode("','",array_values($arr));
       $sql .= '\')';
       return $this->query($sql);
 
@@ -115,8 +115,5 @@ class mysql extends db{
 
 
 }
-
-
-
 
  ?>

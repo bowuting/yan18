@@ -15,6 +15,8 @@ require (ROOT.'include/log.class.php');
 require (ROOT.'include/lib_base.php');
 require (ROOT.'include/mysql.class.php');
 
+require (ROOT.'model/TestModel.php');
+
 define ('DEBUG',true);                   //定义调试模式
 if (defined('DEBUG')) {
   error_reporting(E_ALL);
