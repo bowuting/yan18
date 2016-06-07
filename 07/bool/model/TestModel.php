@@ -12,5 +12,7 @@ class TestModel{
     return $this->db->autoExecute($this->table,$data);
   }
 
+  
+
 }
 ?>
