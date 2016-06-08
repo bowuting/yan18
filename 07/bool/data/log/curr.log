@@ -1,0 +1,259 @@
+use 
+set names 
+use 
+set names 
+insert into test(t1,t2) values('','')
+use 
+set names 
+insert into test(t1,t2) values('tttt1','ttt2')
+use boolshop
+set names utf8
+insert into test(t1,t2) values('tttt1','ttt2')
+use boolshop
+set names utf8
+insert into test(t1,t2) values('ttttone\"','ttt2\'')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('tsssne\"','ttt2\'')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+insert into  (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into cate (catename,intro) values ('aaaa','introintor')
+use boolshop
+set names utf8
+insert into cate (catename,intro) values ('bbbb','dsfadsafdsafd')
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro,act,old_cat_name,cat_id) values ('男士正装','0','衣服类~','insert','','')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('男士正装','衣服','0')
+use boolshop
+set names utf-8
+insert into category (cat_name,intro,parent_id) values ('男士正装','衣服','0')
+use boolshop
+insert into category (cat_name,intro,parent_id) values ('yifu','yifu','0')
+use boolshop
+insert into category (cat_name,intro,parent_id) values ('衣服','男装','0')
+use boolshop
+insert into category (cat_name,intro,parent_id) values ('衣服','男装','0')
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('衣服','男装','0')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('电脑','mac/ausu','0')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('男士商务','商务','<br />
+<b>Notice</b>:  Undefined index: vat_id in <b>/Users/bowuting/work/mamp/yan18/07/bool/view/admin/templates/cateadd.html</b> on line <b>33</b><br />
+')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('女士商务','女士商务','2')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('男士正装','男','0')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('女士正装','女','0')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('男士商务','商务男','1')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('女士商务','商务女','2')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('女士商务衬衫','衬衫','4')
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
