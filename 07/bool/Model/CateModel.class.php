@@ -13,7 +13,7 @@ class CateModel extends Model{
 
   //获取本表中所有的数据
   public function select(){
-    $sql = 'select cat_id,cat_name,intro,parent_id from category';
+    $sql = 'select cat_id,cat_name,intro,parent_id from ' . $this->table;
     return $this->db->getAll($sql);
   }
 
@@ -30,6 +30,21 @@ class CateModel extends Model{
     }
     return $tree;
   }
+
+
+  //删除栏目
+  public function delete($cat_id = 0){
+    $sql = 'delete from ' . $this->table . ' where cat_id=' . $cat_id;
+    $this->db->query($sql);
+
+    return $this->db->affected_rows();
+  }
+
+
+
+
+
+
 }
 
 
