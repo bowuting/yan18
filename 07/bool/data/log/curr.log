@@ -290,3 +290,9 @@ delete from category where cat_id=5
 use boolshop
 set names utf8
 select cat_id,cat_name,intro,parent_id from category
+use boolshop
+set names utf8
+delete from category where cat_id=2
+use boolshop
+set names utf8
+select cat_id,cat_name,intro,parent_id from category
