@@ -8,29 +8,32 @@ YY频道: 88354001
 ****/
 
 
-// 栏目的删除页面
-
 /**
+catedit.php
+作用: 编辑栏目
+
 思路:
 接收cat_id
 
-调用model
+实例化model
+调用model取出栏目信息
 
-删除cat_id
+展示到表单
 **/
 
 
 define('ACC',true);
 require('../include/init.php');
 
-
 $cat_id = $_GET['cat_id'] + 0;
 
 $cat = new CatModel();
+$catinfo = $cat->find($cat_id);
 
-if($cat->delete($cat_id)) {
-    echo '删除成功';
-} else {
-    echo '删除失败';
-}
+
+$catlist = $cat->select();
+$catlist = $cat->getCatTree($catlist);
+//print_r($catinfo);
+
+include(ROOT . 'view/admin/templates/catedit.html');
 

@@ -19,3 +19,5 @@ class Model {
         $this->table = $table;
     }
 }
+
+    

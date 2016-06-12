@@ -10,7 +10,7 @@
 <body>
 
 <h1>
-<span class="action-span"><a href="catelist.php">商品分类</a></span>
+<span class="action-span"><a href="catelist.html">商品分类</a></span>
 <span class="action-span1"><a href="#">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加分类 </span>
 <div style="clear:both"></div>
 </h1>
@@ -28,18 +28,16 @@
         <td class="label">上级分类:</td>
         <td>
           <select name="parent_id">
-                        <option value="0">顶级类型</option>
-                        <?php foreach($catelist as $v) { ?>
+                        <option value="0">顶级分类</option>
+                        <?php foreach($catlist as $v) { ?>
                         <option value="<?php echo $v['cat_id']; ?>">
-                          <?php echo str_repeat('&nbsp;&nbsp;',$v['lev']),$v['cat_name']; ?></option>
+                        <?php echo str_repeat('&nbsp;&nbsp;',$v['lev']),$v['cat_name']; ?></option>
                         <?php } ?>
                       </select>
         </td>
       </tr>
-
-
       <tr>
-        <td class="label">分类描述:</td>
+        <td class="label">栏目简介:</td>
         <td>
           <textarea name='intro' rows="6" cols="48"></textarea>
         </td>
