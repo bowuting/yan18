@@ -32,6 +32,30 @@ $cat_id = $_POST['cat_id'] + 0;
 // 调用model 来更改
 $cat = new CatModel();
 
+
+//查找
+//echo "你想修改".$cat_id."栏目".'<br />';
+//echo "想修改父栏目为".$data['parent_id'].'<br />';
+$trees =  $cat->getTree($data['parent_id']);
+
+
+//想要改的父栏目是否在当前的家谱树中
+$flag = true;
+foreach ($trees as $v) {
+  if ($v['cat_id'] == $cat_id) {
+    $flag = false;
+    break;
+  }
+}
+
+
+if(!$flag){
+  //echo $cat_id.'是'.$data['parent_id'].'的祖先。'.'<br />';
+  echo "父栏目选取错误<br />";
+  exit;
+}
+
+
 if($cat->update($data,$cat_id)) {
     echo '修改成功';
 } else {

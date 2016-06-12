@@ -52,15 +52,38 @@ class CatModel extends Model{
         return $tree;
     }
 
+    public function getSon($id){
+      $sql = 'select cat_id,cat_name,parent_id from '. $this->table .' where parent_id=' . $id;
+      return $this->db->getAll($sql);
+    }
+
+    //求家谱树
+    public function getTree($id = 0){
+      $tree = array();
+      $cats = $this->select();
+      while ($id > 0  ) {
+          foreach ($cats as $v) {
+            if ($v['cat_id'] == $id) {
+              $tree[] = $v;
+
+              $id = $v['parent_id'];
+              break;
+            }
+          }
+      }
+      return $tree;
+    }
+
     // 删除栏目
     public function delete($cat_id=0) {
-        $sql = 'delete from ' . $this->table . ' where cat_id=' . $cat_id;
+        $sql = 'delete from ' . $this->table . ' where cat_id='.$cat_id;
         $this->db->query($sql);
 
         return $this->db->affected_rows();
     }
 
-    // 
+
+    //
     public function update($data,$cat_id=0) {
         $this->db->autoExecute($this->table,$data,'update',' where cat_id=' . $cat_id);
         return $this->db->affected_rows();
