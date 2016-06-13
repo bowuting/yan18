@@ -750,3 +750,65 @@ select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
 select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category where parent_id=1
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac','11','6','8888','8000','dadad','10','1','1','1','1','轻薄 学生','苹果公司推出电脑','1465823384')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac','11','6','8888','8000','dadad','10','1','1','1','1','轻薄 学生','苹果公司推出电脑','1465823494')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac','','6','8888','8000','dadad','10','1','1','1','1','轻薄 学生','苹果公司推出电脑','1465823565')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac','1','6','8888','8000','dadad','10','1','1','1','1','轻薄 学生','苹果公司推出电脑','1465823887')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac','1','6','8888','8000','dadad','10','1','1','1','1','轻薄 学生','苹果公司推出电脑','1465823940')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac1','2','7','12','15','','0','0','0','0','1','','','1465824016')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac1','2','7','12','15','','0','0','0','0','1','','','1465824092')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac1','3','7','12','15','','0','0','0','0','1','','','1465824096')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac1','','7','12','15','','0','0','0','0','1','','','1465824113')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac12','','7','12','15','','0','0','0','0','1','','','1465824119')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac12','','9','12','15','','0','0','0','0','1','','','1465824130')

@@ -7,6 +7,7 @@
 YY频道: 88354001
 ****/
 
+defined('ACC')||exit('ACC Denied');
 
 class CatModel extends Model{
     protected $table = 'category';
