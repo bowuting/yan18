@@ -812,3 +812,68 @@ insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc
 use boolshop
 set names utf8
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac12','','9','12','15','','0','0','0','0','1','','','1465824130')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('mac12','14','9','12','15','','0','0','0','0','1','','','1465826018')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('num','11111','7','23','220','','1','0','0','0','1','aa','ddd','1465827570')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_number,add_time) values ('num','111112','7','23','220','','1','0','0','0','1','aa','ddd','122','1465827698')
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+1
+use boolshop
+set names utf8
+select * from goods where goods_id=1
+use boolshop
+set names utf8
+select * from goods where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods where goods_id=5
+use boolshop
+set names utf8
+select * from goods where goods_id=5
+use boolshop
+set names utf8
+select * from goods where goods_id=9
+use boolshop
+set names utf8
+select * from goods

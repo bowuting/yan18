@@ -34,7 +34,7 @@ $data['is_hot']       = isset($_POST['is_hot'])?1:0;
 $data['is_on_sale']   = isset($_POST['is_on_sale'])?1:0;
 $data['keywords']     = $_POST['keywords'];
 $data['goods_brief']  = $_POST['goods_brief'];
-
+$data['goods_number']  = $_POST['goods_number'];
 $data['add_time'] = time();
 
 //print_r($data);

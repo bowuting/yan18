@@ -12,11 +12,11 @@ class mysql extends db {
     private static $ins = NULL;
     private $conn = NULL;
     private $conf = array();
-    
+
 
     protected function __construct() {
         $this->conf = conf::getIns();
-        
+
         $this->connect($this->conf->host,$this->conf->user,$this->conf->pwd);
         $this->select_db($this->conf->db);
         $this->setChar($this->conf->char);
@@ -67,7 +67,7 @@ class mysql extends db {
         // implode(',',array_keys($arr));
         // implode("','",array_values($arr));
         */
-        
+
         if(!is_array($arr)) {
             return false;
         }
@@ -79,22 +79,22 @@ class mysql extends db {
             }
             $sql = rtrim($sql,',');
             $sql .= $where;
-            
+
             return $this->query($sql);
         }
 
-        $sql = 'insert into ' . $table . ' (' . implode(',',array_keys($arr)) . ')';
+        $sql  = 'insert into ' . $table . ' (' . implode(',',array_keys($arr)) . ')';
         $sql .= ' values (\'';
         $sql .= implode("','",array_values($arr));
         $sql .= '\')';
 
         return $this->query($sql);
-    
+
     }
 
     public function getAll($sql) {
         $rs = $this->query($sql);
-        
+
         $list = array();
         while($row = mysql_fetch_assoc($rs)) {
             $list[] = $row;
@@ -105,7 +105,7 @@ class mysql extends db {
 
     public function getRow($sql) {
         $rs = $this->query($sql);
-        
+
         return mysql_fetch_assoc($rs);
     }
 
