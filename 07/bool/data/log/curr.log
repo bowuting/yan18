@@ -882,6 +882,7 @@ set names utf8
 select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
+<<<<<<< HEAD
 select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
@@ -892,6 +893,56 @@ select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
 select cat_id,cat_name,parent_id from category
+=======
+select * from goods
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+update goods set is_delete='1'wheregoods_id=9
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=9
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=8
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+>>>>>>> 9410130affcb55f341d81320fecdc9a45a5389f6
 use boolshop
 set names utf8
 select cat_id,cat_name,parent_id from category
@@ -900,12 +951,41 @@ set names utf8
 select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
+<<<<<<< HEAD
 insert into category (cat_name,parent_id,intro) values ('1','0','1')
+=======
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=0
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=7
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=7
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+>>>>>>> 9410130affcb55f341d81320fecdc9a45a5389f6
 use boolshop
 set names utf8
 select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
+<<<<<<< HEAD
 select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
@@ -919,3 +999,138 @@ select * from goods
 use boolshop
 set names utf8
 select * from goods where goods_id=1
+=======
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods () values ('')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id) values ('111','111111','8','011','20','','','1','1','','','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id) values ('111','111111','8','011','20','','','1','1','','','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id) values ('111','1111111','8','011','20','DDD','0.1','20','1','1','1','ddd','nice','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id) values ('111','11111111111','0','12','21','222','1','20','1','1','1','','','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id) values ('111','11111111111','0','12','21','222','1','20','1','1','1','','','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id) values ('111','11111111111','0','12','21','222','1','20','1','1','1','','','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id) values ('111','11111111111','0','12','21','222','1','20','1','1','1','','','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id) values ('111','11111111111','0','12','21','222','1','20','1','1','1','','','0')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select * from goods where goods_id=0
+use boolshop
+set names utf8
+select * from goods where goods_id=0
+update goods set is_delete='1' where goods_id=0
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id,is_new,add_time) values ('111','1111111112','11','200','240','eeqe','1','20','1','1','1','ddd','333','0','0','1465903781')
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=13
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where goods_id=0
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where goods_id=1
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+insert into goods (is_hot,is_new,is_best,add_time) values ('0','0','0','1465904160')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('111111','111111','0','111','101','','0','1','1','','','0','0','0','0','1465904194')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('111111','1111111','0','111','101','','0','1','1','','','0','0','0','0','1465904203')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('111111','1DAFAFAW','0','111','101','','0','1','1','','','0','0','0','0','1465904210')
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=14
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=12
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=11
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+>>>>>>> 9410130affcb55f341d81320fecdc9a45a5389f6

@@ -6,15 +6,15 @@ require("../include/init.php");
 
 
 
-$data = array();
-$data['goods_name'] = trim($_POST['goods_name']);
+
+/*$data['goods_name'] = trim($_POST['goods_name']);
 
 //数据的检验，做一个示例
 if ($data['goods_name'] == '') {
   echo "商品名不能为空";
   exit;
 }
-
+*/
 /*
 foreach ($_POST as $k => $v) {
 
@@ -22,6 +22,7 @@ foreach ($_POST as $k => $v) {
 }
 */
 
+/*
 $data['goods_sn']     = trim($_POST['goods_sn']);
 $data['cat_id']       = $_POST['cat_id'] + 0;
 $data['shop_price']   = $_POST['shop_price'];
@@ -36,10 +37,26 @@ $data['keywords']     = $_POST['keywords'];
 $data['goods_brief']  = $_POST['goods_brief'];
 $data['goods_number']  = $_POST['goods_number'];
 $data['add_time'] = time();
+*/
 
 //print_r($data);
 
 $goods = new GoodsModel();
+
+
+
+
+$_POST['goods_weight'] *= $_POST['weight_unit'];
+print_r($_POST);
+
+$data = array();
+$data = $goods->_facade($_POST);//自动过滤
+print_r($data);
+
+$data = $goods->_autoFill($data);//自动填充
+print_r($data);
+
+
 if($goods_id = $goods->add($data)){
   echo "商品发布成功";
 } else {
