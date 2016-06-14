@@ -11,7 +11,8 @@ class Model {
     protected $table = NULL; // 是model所控制的表
     protected $db = NULL; // 是引入的mysql对象
     protected $pk = '';
-
+    
+    protected $fields = array();
     public function __construct() {
         $this->db = mysql::getIns();
     }
@@ -20,6 +21,22 @@ class Model {
         $this->table = $table;
     }
 
+
+    /*
+    负责把传来的数组
+    清除掉不用的单元
+    留下与表里字段对应的单元
+
+    */
+    public function _facade($array=array()){
+      $data = array();
+      foreach ($array as $k => $v) {
+        if (in_array($k,$this->fields)) {//判断$k是否是表的字段
+          $data[$k] = $v;
+        }
+      }
+      return $data;
+    }
 
     /*
     往表里增加数据

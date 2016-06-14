@@ -969,3 +969,17 @@ select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
 select * from goods where is_delete=0
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods () values ('')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id) values ('111','111111','8','011','20','','','1','1','','','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id) values ('111','111111','8','011','20','','','1','1','','','0')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id) values ('111','1111111','8','011','20','DDD','0.1','20','1','1','1','ddd','nice','0')
