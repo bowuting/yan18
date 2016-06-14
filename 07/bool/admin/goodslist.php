@@ -4,8 +4,7 @@ define('ACC',true);
 require("../include/init.php");
 
 $goods = new GoodsModel();
-$goodslist = $goods->select();
-
+$goodslist = $goods->getGoods();
 
 
 include(ROOT . 'view/admin/templates/goodslist.html');
