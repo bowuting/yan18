@@ -56,7 +56,7 @@ print_r($data);
 $data = $goods->_autoFill($data);//自动填充
 print_r($data);
 
-exit;
+
 if($goods_id = $goods->add($data)){
   echo "商品发布成功";
 } else {
