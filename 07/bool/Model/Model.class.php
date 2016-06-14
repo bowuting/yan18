@@ -11,8 +11,14 @@ class Model {
     protected $table = NULL; // 是model所控制的表
     protected $db = NULL; // 是引入的mysql对象
     protected $pk = '';
-    
+
     protected $fields = array();
+    protected $_auto  = array(
+                              array('is_hot','value',0),
+                              array('is_new','value',0),
+                              array('is_best','value',0),
+                              array('add_time','function','time')
+                              );
     public function __construct() {
         $this->db = mysql::getIns();
     }
@@ -33,6 +39,28 @@ class Model {
       foreach ($array as $k => $v) {
         if (in_array($k,$this->fields)) {//判断$k是否是表的字段
           $data[$k] = $v;
+        }
+      }
+      return $data;
+    }
+
+    /*
+    自动填充
+    负责把表中需要的，而$_POST中没有的，赋值
+    比如 $_POST中没有add_time,即商品时间
+    则自动把time()的返回值赋过来
+    */
+    public function _autoFill($data){
+      foreach ($this->_auto as $k => $v ) {
+        if (!array_key_exists($v[0],$data)) {
+            switch ($v[1]) {
+              case 'value':
+                $data[$v[0]] = $v[2];
+                break;
+              case 'function':
+                $data[$v[0]] = call_user_func($v[2]);
+                break;
+            }
         }
       }
       return $data;

@@ -44,15 +44,19 @@ $data['add_time'] = time();
 $goods = new GoodsModel();
 
 
-$data = array();
+
 
 $_POST['goods_weight'] *= $_POST['weight_unit'];
-$data = $goods->_facade($_POST);
+print_r($_POST);
+
+$data = array();
+$data = $goods->_facade($_POST);//自动过滤
 print_r($data);
 
+$data = $goods->_autoFill($data);//自动填充
+print_r($data);
 
-
-
+exit;
 if($goods_id = $goods->add($data)){
   echo "商品发布成功";
 } else {
