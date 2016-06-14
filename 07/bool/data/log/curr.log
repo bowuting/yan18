@@ -877,3 +877,45 @@ select * from goods where goods_id=9
 use boolshop
 set names utf8
 select * from goods
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('1','0','1')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_number,add_time) values ('联想','sn000001','8','4800','5000','笔记本电脑','2.1','1','1','1','1','nice 6666','商务','10','1465837986')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_number,add_time) values ('联想','s000001','11','4800','5000','笔记本电脑','1.8','1','1','1','1','666','商务','10','1465838147')
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods where goods_id=1
