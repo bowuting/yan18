@@ -20,6 +20,10 @@ class GoodsModel extends Model {
     $sql = 'select * from goods where is_delete=0';
     return $this->db->getAll($sql);
   }
+  public function getGoodsTrashed(){
+    $sql = 'select * from goods where is_delete=1';
+    return $this->db->getAll($sql);
+  }
 
 
 }
