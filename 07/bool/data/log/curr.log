@@ -1134,3 +1134,9 @@ use boolshop
 set names utf8
 select * from goods where is_delete=0
 >>>>>>> 9410130affcb55f341d81320fecdc9a45a5389f6
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('111','11111dadadad','0','0','0','','0','1','1','','','0','0','0','0','1465960070')
+use boolshop
+set names utf8
+select * from goods where is_delete=0

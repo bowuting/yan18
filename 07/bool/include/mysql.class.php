@@ -67,31 +67,29 @@ class mysql extends db {
         // implode(',',array_keys($arr));
         // implode("','",array_values($arr));
         */
-
         if(!is_array($arr)) {
             return false;
         }
-
         if($mode == 'update') {
-            $sql = 'update ' . $table .' set ';
-            foreach($arr as $k=>$v) {
-                $sql .= $k . "='" . $v ."',";
-            }
+              $sql = 'update ' . $table .' set ';
+              foreach($arr as $k=>$v) {
+              $sql .= $k . "='" . $v ."',";
+          }
             $sql = rtrim($sql,',');
             $sql .= $where;
-
             return $this->query($sql);
         }
 
-        $sql  = 'insert into ' . $table . ' (' . implode(',',array_keys($arr)) . ')';
+
+        $sql  = 'insert into ' . $table ;
+        $sql .= ' (' . implode(',',array_keys($arr)) . ')';
         $sql .= ' values (\'';
         $sql .= implode("','",array_values($arr));
         $sql .= '\')';
 
+
         return $this->query($sql);
-
     }
-
     public function getAll($sql) {
         $rs = $this->query($sql);
 
