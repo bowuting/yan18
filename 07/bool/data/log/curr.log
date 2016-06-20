@@ -1,10 +1,10 @@
-use 
-set names 
-use 
-set names 
+use
+set names
+use
+set names
 insert into test(t1,t2) values('','')
-use 
-set names 
+use
+set names
 insert into test(t1,t2) values('tttt1','ttt2')
 use boolshop
 set names utf8
@@ -1134,3 +1134,42 @@ use boolshop
 set names utf8
 select * from goods where is_delete=0
 >>>>>>> 9410130affcb55f341d81320fecdc9a45a5389f6
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=1
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id,is_new,add_time) values ('ddddd','se11111111','11','110','120','dddd','1.2','1','1','1','1','daa','ddd','0','0','1466253759')
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from goods where is_delete=0
