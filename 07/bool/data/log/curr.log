@@ -1136,15 +1136,20 @@ select * from goods where is_delete=0
 >>>>>>> 9410130affcb55f341d81320fecdc9a45a5389f6
 use boolshop
 set names utf8
+<<<<<<< HEAD
 select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
 select * from goods where is_delete=1
+=======
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('111','11111dadadad','0','0','0','','0','1','1','','','0','0','0','0','1465960070')
+>>>>>>> 30ad89c5dd9ddb3c6744091ebfa8066def1fc7a3
 use boolshop
 set names utf8
 select * from goods where is_delete=0
 use boolshop
 set names utf8
+<<<<<<< HEAD
 update goods set is_delete='1' where goods_id=1
 use boolshop
 set names utf8
@@ -1155,17 +1160,28 @@ select * from goods where is_delete=1
 use boolshop
 set names utf8
 select cat_id,cat_name,parent_id from category
+=======
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+>>>>>>> 30ad89c5dd9ddb3c6744091ebfa8066def1fc7a3
 use boolshop
 set names utf8
 select * from goods where is_delete=0
 use boolshop
 set names utf8
+<<<<<<< HEAD
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id,is_new,add_time) values ('ddddd','se11111111','11','110','120','dddd','1.2','1','1','1','1','daa','ddd','0','0','1466253759')
+=======
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id,is_new,add_time) values ('iPhone5s','es0000111','1','5800','6000','dafkafafafa','1.2','20','1','1','1','苹果手机','手机','0','0','1466067953')
+>>>>>>> 30ad89c5dd9ddb3c6744091ebfa8066def1fc7a3
 use boolshop
 set names utf8
 select * from goods where is_delete=0
 use boolshop
 set names utf8
+<<<<<<< HEAD
 select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
@@ -1173,3 +1189,12 @@ select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
 select * from goods where is_delete=0
+=======
+update goods set is_delete='1' where goods_id=16
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+>>>>>>> 30ad89c5dd9ddb3c6744091ebfa8066def1fc7a3
