@@ -37,6 +37,7 @@ if($_FILES['pic']['error'] != 0){
 }
 
 $pic =  $_FILES['pic'];
+print_r($_FILES);
 
 $path = './' . mk_dir() . '/' . randName() . '.' . getExt($pic['name']);
 if(move_uploaded_file($pic['tmp_name'],$path)){
