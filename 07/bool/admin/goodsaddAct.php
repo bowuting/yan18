@@ -47,14 +47,21 @@ $goods = new GoodsModel();
 
 
 $_POST['goods_weight'] *= $_POST['weight_unit'];
-print_r($_POST);
+//print_r($_POST);
 
 $data = array();
 $data = $goods->_facade($_POST);//自动过滤
-print_r($data);
+//print_r($data);
 
 $data = $goods->_autoFill($data);//自动填充
-print_r($data);
+//print_r($data);
+
+//上传图片
+$uptool =  new UpTool();
+$ori_img = $uptool->up('ori_img');
+if ($ori_img) {
+  $data['ori_img'] = $ori_img;
+}
 
 
 if($goods_id = $goods->add($data)){
