@@ -1198,3 +1198,33 @@ use boolshop
 set names utf8
 select * from goods where is_delete=1
 >>>>>>> 30ad89c5dd9ddb3c6744091ebfa8066def1fc7a3
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=2
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=2
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('a','ssseee33','0','0','0','','0','1','1','','','0','0','0','0','1466530810')
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=3
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
