@@ -14,13 +14,13 @@ $red = imagecolorallocate($im,255,0,0);
 imagefill($im,0,0,$gray);
 
 //画矩形
-imagerectangle($im,200,150,600,450,$blue);
+imagefilledrectangle($im,200,150,600,450,$blue);
 
 //画椭圆
-imageellipse($im,400,300,400,300,$red);
+imagefilledellipse($im,400,300,400,300,$red);
 
 //画圆
-imageellipse($im,400,300,300,300,$red);
+imagefilledellipse($im,400,300,300,300,$gray);
 
 
 header('content-type: image/png');
