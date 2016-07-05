@@ -1,24 +1,31 @@
 <?php
+/****
+燕十八 公益PHP讲堂
+
+论  坛: http://www.zixue.it
+微  博: http://weibo.com/Yshiba
+YY频道: 88354001
+****/
+
 
 
 define('ACC',true);
 
-require ('include/init.php');
-include_once(ROOT . 'tool/UpTool.class.php');
+require('include/init.php');
+require(ROOT . 'tool/UpTool.class.php');
 
-$u = new UpTool();
-$u->setExt('rar');
-$u->setSize(10);
-if ($res = $u->up('pic')) {
-  echo "ok";
-  echo $res;
+
+$uptool = new UpTool();
+$uptool->setExt('doc');
+$uptool->setSize(1);
+
+
+if($res = $uptool->up('avatar')) {
+    echo 'OK';
+    echo $res;
 } else {
-  echo $u->getError();
-  echo "fail";
+    echo 'FAIL<br />';
+    echo $uptool->getErr();
 }
 
 
-
-
-
- ?>

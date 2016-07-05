@@ -9,6 +9,7 @@ intro varchar(100) not null default '',
 parent_id int not null default 0
 )engine myisam charset utf8;
 
+
 #商品表
 CREATE TABLE IF NOT EXISTS `goods` (
   `goods_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -36,5 +37,3 @@ CREATE TABLE IF NOT EXISTS `goods` (
   PRIMARY KEY (`goods_id`),
   UNIQUE KEY `goods_sn` (`goods_sn`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-ALTER TABLE  `goods` ADD  `keywords` VARCHAR( 40 ) NOT NULL;
-# 增加keywords字段
