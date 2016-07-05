@@ -56,14 +56,38 @@ class ImageTool
     $dim = $dfunc($dst);
     $wim = $wfunc($water);
 
+
+// 根据水印的位置 计算粘贴的坐标
+    switch($pos) {
+            case 0: // 左上角
+            $posx = 0;
+            $posy = 0;
+            break;
+
+            case 1: // 右上角
+            $posx = $dinfo['width'] - $winfo['width'];
+            $posy = 0;
+            break;
+
+            case 3: // 左下角
+            $posx = 0;
+            $posy = $dinfo['height'] - $winfo['height'];
+            break;
+
+            default:
+            $posx = $dinfo['width'] - $winfo['width'];
+            $posy = $dinfo['height'] - $winfo['height'];
+        }
+
+// 加水印
     imagecopymerge($dim,$wim, 0,0 ,0,0,$winfo['width'],$winfo['height'],$alpha);
     if (!$save) {
-      $save = $dim;
+      $save = $dst;
       //unlink($dst);
     }
 
     $createfunc = 'image'.$dinfo['ext'];
-    $createfunc($save);
+    $createfunc($dim,$save);
 
     imagedestroy($dim);
     imagedestroy($wim);
@@ -71,13 +95,62 @@ class ImageTool
     return true;
   }
 
+  /*
+    生成缩略图
+  */
+  public static function thumb($dst,$save=NULL,$width=200,$height=200){
+    //首先判断图片存不存在
+    $dinfo = self::imageInfo($dst);
+        if($dinfo == false) {
+            return false;
+        }
 
+    //计算缩放比例
+    $calc = min($width/$dinfo['width'],$height/$dinfo['height']);
+
+    //创建原始画布
+    $dfunc = 'imagecreatefrom'.$dinfo['ext'];
+    $dim = $dfunc($dst);
+
+    //创建缩略图画布
+    $tim = imagecreatetruecolor($width,$height);
+
+    //创建白色 填充缩略图画布
+    $white = imagecolorallocate($tim,255,255,255);
+
+    //填充缩略画布
+    imagefill($tim,0,0,$white);
+
+    //复制并缩略
+    $dwidth = (int)$dinfo['width']*$calc;
+    $dheight = (int)$dinfo['height']*$calc;
+
+    $paddingx = (int)($width - $dwidth) / 2;
+    $paddingy = (int)($height - $dheight) / 2;
+
+
+    imagecopyresampled($tim,$dim,$paddingx,$paddingy,0,0,$dwidth,$dheight,$dinfo['width'],$dinfo['height']);
+
+    // 保存图片
+    if(!$save) {
+       $save = $dst;
+       //unlink($dst);
+    }
+    $createfunc = 'image' . $dinfo['ext'];
+    $createfunc($tim,$save);
+
+    imagedestroy($dim);
+    imagedestroy($tim);
+
+    return true;
+
+  }
 }
 
 
 print_r(ImageTool::imageInfo('./test.png'));
-ImageTool::water('./1.png','./test.png');
-
-
-
+echo ImageTool::water('./1.png','./test.png','2.png')?"ok":"fail";
+echo ImageTool::thumb('test.png','test1.png')?"ok":"fail";
+echo ImageTool::thumb('test.png','test2.png',200,300)?"ok":"fail";
+echo ImageTool::thumb('test.png','test3.png',300,200)?"ok":"fail";
  ?>
