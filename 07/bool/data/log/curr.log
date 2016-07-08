@@ -677,3 +677,84 @@ select cat_id,cat_name,parent_id from category
 use boolshop
 set names utf8
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time,ori_img,goods_img,thumb_img) values ('1111111','sdsdsdad','1','01','2','','0','1','1','','0','0','0','0','1467727448','data/images/201607/05/5nugzw.jpg','data/images/201607/05/goods_5nugzw.jpg','data/images/201607/05/thumb_5nugzw.jpg')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('男士正装','0','')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('男士t恤','1','')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('女士正装','0','')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('女士t恤','3','')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070872364'
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070899225'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_hot,is_on_sale,goods_brief,goods_id,is_best,add_time) values ('男士t恤商品','BL2016070899225','2','20','23','test描述信息','0.2','132','1','1','1','666dddddddddddddddddddd','0','0','1467984359')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070845527'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('cfsaf','BL2016070845527','0','0','0','','0','1','1','','0','0','0','0','1467984537')
+use boolshop
+set names utf8
+select * from goods where goods_id=0
+use boolshop
+set names utf8
+select * from goods where goods_id=0
+use boolshop
+set names utf8
+select * from goods where goods_id=0
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070841017'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('dadadads','BL2016070841017','0','0','0','','0','1','1','','0','0','0','0','1467984673')

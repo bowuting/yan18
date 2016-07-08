@@ -18,6 +18,6 @@ $_CFG = array();
 
 $_CFG['host'] = 'localhost';
 $_CFG['user'] = 'root';
-$_CFG['pwd'] = 'root';
+$_CFG['pwd'] = 'zc5210';
 $_CFG['db'] = 'boolshop';
 $_CFG['char'] = 'utf8';
