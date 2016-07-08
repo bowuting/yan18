@@ -3,5 +3,6 @@
 echo $r;
 
 
+echo "string";
 
  ?>
