@@ -37,3 +37,13 @@ CREATE TABLE IF NOT EXISTS `goods` (
   PRIMARY KEY (`goods_id`),
   UNIQUE KEY `goods_sn` (`goods_sn`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+create table user (
+user_id int unsigned not null auto_increment primary key,
+username varchar(16) not null default '',
+email varchar(30) not null default '',
+passwd char(32) not null default '',
+regtime int unsigned not null default 0,
+lastlogin int unsigned not null default 0
+) engine myisam charset utf8;
