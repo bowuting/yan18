@@ -58,11 +58,12 @@ class UpTool {
     
     public function up($key) {
         if(!isset($_FILES[$key])) {
+            echo "wenjianbucunz";
             return false;
         }
 
         $f = $_FILES[$key];
-
+        echo "wenjiancunz";
 
         // 检验上传有没有成功
         if($f['error']) {
@@ -160,7 +161,7 @@ class UpTool {
     protected function mk_dir() {
         $dir = ROOT . 'data/images/' . date('Ym/d');
 
-        if(is_dir($dir) || mkdir($dir,0777,true)) {
+        if(is_dir($dir) || mkdir($dir,0755,true)) {
             return $dir;
         } else {
             return false;

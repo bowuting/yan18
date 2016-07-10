@@ -56,7 +56,7 @@ class GoodsModel extends Model{
 
         $sql = 'select count(*) from ' . $this->table . " where goods_sn='" . $sn . "'";
         
-        return $this->db->getOne($sql)?$this->createSn():$sn;
+        return $this->db->getOne($sql)?$this->createSn():$sn;//digui
     }
 }
 

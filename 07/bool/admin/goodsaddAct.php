@@ -35,9 +35,12 @@ if(!$goods->_validate($data)) {
 // 2012年12月4日 上传图片
 $uptool = new UpTool();
 $ori_img = $uptool->up('ori_img');
+var_dump($ori_img);
+print_r($uptool->getErr());
 
 
 if($ori_img) {
+    echo "string";
     $data['ori_img'] = $ori_img;
 }
 
@@ -65,6 +68,8 @@ if($ori_img) {
     }
 
 }
+
+print_r($data);
 
 if($goods->add($data)) {
     echo '商品发布成功';

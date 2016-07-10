@@ -758,3 +758,77 @@ use boolshop
 set names utf8
 select count(*) from goods where goods_sn='BL2016070841017'
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('dadadads','BL2016070841017','0','0','0','','0','1','1','','0','0','0','0','1467984673')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070884430'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('daddasdad','BL2016070884430','0','0','0','','0','1','1','','0','0','0','0','1467984983')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070846807'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('daddas','BL2016070846807','0','0','0','','0','1','1','','0','0','0','0','1467985018')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070832526'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('daddas22','BL2016070832526','0','0','0','','0','1','1','','0','0','0','0','1467985032')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070892826'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('dadd2','BL2016070892826','0','0','0','','0','1','1','','0','0','0','0','1467985124')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070857946'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('dadd2','BL2016070857946','0','0','0','','0','1','1','','0','0','0','0','1467985133')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070848605'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('da2','BL2016070848605','0','0','0','','0','1','1','','0','0','0','0','1467985164')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070844348'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('d2','BL2016070844348','0','0','0','','0','1','1','','0','0','0','0','1467985218')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070815617'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('32424','BL2016070815617','0','0','0','','0','1','1','','0','0','0','0','1467985246')
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070843165'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('2222','BL2016070843165','0','0','0','','0','1','1','','0','0','0','0','1467985504')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070838723'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('2222','BL2016070838723','0','0','0','','0','1','1','','0','0','0','0','1467985615')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070835227'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('2222','BL2016070835227','0','0','0','','0','1','1','','0','0','0','0','1467985722')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070836780'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('1','BL2016070836780','0','0','0','','0','1','1','','0','0','0','0','1467985767')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070890628'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('2','BL2016070890628','0','0','0','','0','1','1','','0','0','0','0','1467986092')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016070839495'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,goods_brief,goods_id,is_hot,is_new,is_best,add_time,ori_img,goods_img,thumb_img) values ('2','BL2016070839495','0','0','0','','0','1','1','','0','0','0','0','1467986119','data/images/201607/08/d7htmu.jpg','data/images/201607/08/goods_d7htmu.jpg','data/images/201607/08/thumb_d7htmu.jpg')
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
