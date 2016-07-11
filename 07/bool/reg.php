@@ -1,8 +1,11 @@
 <?php 
 
-//注册表单
+
+define('ACC',true);
+require('./include/init.php');
 
 
-require "./view/front/zhuce.html"
+include(ROOT . '/view/front/zhuce.html');
+
 
  ?>

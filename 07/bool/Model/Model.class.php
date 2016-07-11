@@ -152,7 +152,10 @@ class Model {
             case 'length':
                 list($min,$max) = explode(',',$parm);
                 return strlen($value) >= $min && strlen($value) <= $max;
-
+            case 'email':
+                // 判断$value是否是email,可以用正则表达式,但现在没学.
+                // 因此,此处用系统函数来判断
+                return (filter_var($value,FILTER_VALIDATE_EMAIL) !== false);
             default:
                 return false;
         }
