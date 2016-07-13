@@ -48,9 +48,23 @@ class UserModel extends Model {
     /*
     根据用户名查询用户信息
     */
-    public function checkUser($username) {
+    public function checkUser($username,$passwd='') {
+        if ($passwd == '') {
         $sql = 'select count(*) from ' . $this->table . " where username='" .$username . "'";
         return $this->db->getOne($sql);
+        } else {
+             $sql = 'select user_id,username,email,passwd from ' . $this->table . " where username='" .$username . "'";
+
+             $row = $this->db->getRow($sql);
+             if (empty($row)) {
+                 return false;
+             }
+             if ($row['passwd'] != $this->encPasswd($passwd)) {
+                 return false;
+             }
+             unset($row['passwd']);
+             return $row;
+        }
     }
 }
 

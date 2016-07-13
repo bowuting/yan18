@@ -875,3 +875,41 @@ select count(*) from user where username='test1'
 insert into user (username,email,passwd,regtime) values ('test1','bowuting@qq.com','c81e728d9d4c2f636f067f89cc14862c','1468224476')
 use boolshop
 set names utf8
+use boolshop
+set names utf8
+select count(*) from user where username='test'
+use boolshop
+set names utf8
+select count(*) from user where username='test'
+insert into user (username,email,passwd,regtime) values ('test','test@test.com','098f6bcd4621d373cade4e832627b4f6','1468392462')
+use boolshop
+set names utf8
+select count(*) from user where username='test'
+use boolshop
+set names utf8
+select user_id,username,email,passwd from user where username='test'
+use boolshop
+set names utf8
+select user_id,username,email,passwd from user where username='test'
+use boolshop
+set names utf8
+select user_id,username,email,passwd from user where username='test'
+use boolshop
+set names utf8
+select user_id,username,email,passwd from user where username='root'
+use boolshop
+set names utf8
+select user_id,username,email,passwd from user where username='test'
+use boolshop
+set names utf8
+select user_id,username,email,passwd from user where username='test'
+use boolshop
+set names utf8
+select count(*) from user where username='bowuting'
+insert into user (username,email,passwd,regtime) values ('bowuting','bowuting@qq.com','d8a49d62f70e6741fab243b932467a6a','1468393942')
+use boolshop
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting@qq.com'
+use boolshop
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
