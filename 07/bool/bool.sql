@@ -1,5 +1,5 @@
 #布尔商城sql语句
-
+/Applications/MAMP/Library/bin/mysql
 
 #栏目表
 create table category (
