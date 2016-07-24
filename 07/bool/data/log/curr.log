@@ -913,3 +913,37 @@ select user_id,username,email,passwd from user where username='bowuting@qq.com'
 use boolshop
 set names utf8
 select user_id,username,email,passwd from user where username='bowuting'
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+select cat_id,cat_name,parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('男士正装','0','男士顶级')
+use bool
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('男士正装','0','男士顶级')
+use bool
+set names utf8
+select * from goods where is_delete=0
+use bool
+set names utf8
+select cat_id,cat_name,parent_id from category
+use bool
+set names utf8
+select count(*) from user where username='bowuting'
+insert into user (username,email,passwd,regtime) values ('bowuting','bowuting@qq.com','d8a49d62f70e6741fab243b932467a6a','1469355883')
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'

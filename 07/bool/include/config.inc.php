@@ -19,5 +19,5 @@ $_CFG = array();
 $_CFG['host'] = 'localhost';
 $_CFG['user'] = 'root';
 $_CFG['pwd'] = 'zc5210';
-$_CFG['db'] = 'boolshop';
+$_CFG['db'] = 'bool';
 $_CFG['char'] = 'utf8';
