@@ -947,3 +947,30 @@ select user_id,username,email,passwd from user where username='bowuting'
 use bool
 set names utf8
 select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'
+use bool
+set names utf8
+select user_id,username,email,passwd from user where username='bowuting'

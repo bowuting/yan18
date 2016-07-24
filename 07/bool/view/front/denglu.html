@@ -27,11 +27,11 @@
               			 <font id="ECS_MEMBERZONE"><div id="append_parent"></div>
  欢迎光临布尔！&nbsp;&nbsp;&nbsp;&nbsp;
  <a href="#">登录</a> | <a href="#">注册</a>
- </font>            
+ </font>
             </div>
 
         <div class="page_top f_r">
-        
+
                      <a href="#">诚聘代理</a>
                          |
                             <a href="#">查看购物车</a>
@@ -39,18 +39,18 @@
                             <a href="#">会员中心</a>
                          |
                             <a href="#">优惠活动</a>
-                   	
+
             <div class="telinfo">
 			<div><a href="#">
  <img border="0" alt="布尔QQ客服" src="./view/front/images/pa"></a></div>
  </div>
-            
-            
-            
+
+
+
         </div>
         </div>
     </div>
-    
+
     <div id="mid_nav" class="mid_nav clearfix">
     	<div class="block">
     	<div class="nav_list f_l">
@@ -77,12 +77,12 @@
                                     <li onmouseout="sw_nav(this,0);" onmouseover="sw_nav(this,1);" style="position:relative; z-index:999999">
                    <a href="#">断码特惠</a>
                                      </li>
-                                  
-                 
-                 
-                 
-                 
-                 
+
+
+
+
+
+
             </ul>
         </div>
         </div>
@@ -93,18 +93,18 @@
 <div class="hot_cate clearfix">
 <div class="f_l"><span class="f_gray_white">热门分类：</span>&nbsp;&nbsp;
 &nbsp;<a href="#">西装</a>&nbsp;&nbsp;<a href="#">型男系列</a>&nbsp;&nbsp;<a href="#">衬衫</a>&nbsp;&nbsp;<a href="#">休闲衬衫</a>&nbsp;&nbsp;<a href="#">领带</a>&nbsp;
-                     
-  <span><b>特别关注:</b> <a target="_blank" href="#">清华店</a> 
-<a target="_blank" href="#">五道口店</a> 
-<a target="_blank" href="#">人大店</a> 
-<a target="_blank" href="#">北邮店</a> 
-<a target="_blank" href="#">北航店</a>   
-<a target="_blank" href="#">农大店</a> 
+
+  <span><b>特别关注:</b> <a target="_blank" href="#">清华店</a>
+<a target="_blank" href="#">五道口店</a>
+<a target="_blank" href="#">人大店</a>
+<a target="_blank" href="#">北邮店</a>
+<a target="_blank" href="#">北航店</a>
+<a target="_blank" href="#">农大店</a>
 <a target="_blank" href="#">西安店</a>
 <a target="_blank" href="#">南京店</a>
 <a target="_blank" href="#">更多…</a></span>
-                     
-                     
+
+
 </div>
 
 </div>
@@ -115,13 +115,13 @@
       <option value="0">所有分类</option>
           <option value="103">待加分类2</option><option value="148">配饰</option><option value="36">&nbsp;&nbsp;&nbsp;&nbsp;领带</option><option value="147">&nbsp;&nbsp;&nbsp;&nbsp;皮带</option><option value="42">女士正装</option><option value="135">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option><option value="136">&nbsp;&nbsp;&nbsp;&nbsp;其它</option><option value="134">&nbsp;&nbsp;&nbsp;&nbsp;套装</option><option value="149">断码特惠</option><option value="66">正装租赁</option><option value="17">男士正装</option><option value="18">&nbsp;&nbsp;&nbsp;&nbsp;西装</option><option value="25">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option><option value="83">正装鞋</option><option value="84">&nbsp;&nbsp;&nbsp;&nbsp;男士皮鞋</option><option value="89">&nbsp;&nbsp;&nbsp;&nbsp;女士皮鞋</option><option value="154">商务大衣</option><option value="128">其它</option>        </select>
         	<input type="text" style="vertical-align:middle; width:120px;" class="txt_style_search" value="" id="keyword" name="keywords"> <input type="submit" style="vertical-align:middle" value="搜索" class="btn_style_3"> &nbsp;
-            
-            
-      
+
+
+
             </form>
         </div>
  <div style=" padding-top:0px; padding-right:5px; overflow:hidden" class="hot_keyword f_l">热门关键字：
-	
+
       <a href="#">正装</a>
       <a href="#">ZYS650</a>
       <a href="#">套裙</a>
@@ -135,7 +135,7 @@
       <a href="#">领带</a>
       <a href="#">条纹</a>
     </div>
-  
+
 </div>
 </div>
 
@@ -164,8 +164,8 @@
    <form onsubmit="return userLogin()" method="post" action="login.php" name="formLogin">
         <table width="100%" cellspacing="5" cellpadding="3" border="0" align="left" class="user_table">
           <tbody><tr>
-            <td width="15%" align="right">用户名</td>
-            <td width="85%"><input type="text" class="inputBg" name="username"></td>
+            <td width="15%" align="right" >用户名</td>
+            <td width="85%"><input type="text" class="inputBg" name="username" value="<?php if(isset($_COOKIE['remuser']))echo $_COOKIE['remuser'];?>"></td>
           </tr>
           <tr>
             <td align="right">密码</td>
@@ -181,12 +181,12 @@
             <td align="left">
             <input type="hidden" value="act_login" name="act">
             <input type="submit" class="us_Submit" value="登陆" name="submit">
-			
+
             </td>
           </tr>
 	  <tr><td></td>
-      
-      
+
+
       <td style="padding-top:80px;"><a class="f3" href="#">密码问题找回密码</a>&nbsp;&nbsp;&nbsp;<a class="f3" href="#">注册邮件找回密码</a></td></tr>
       </tbody></table>
     </form>
@@ -212,7 +212,7 @@
 
 
  <div class="blank"></div>
-    
+
 
         	<div class="help_lib">
             	<div class="help_cats clearfix">
@@ -248,14 +248,14 @@
     <dd><a title="产品质量保证" href="#">产品质量保证</a></dd>
     <dd><a title="网购退换货说明" href="#">网购退换货说明</a></dd>
   </dl>
-                    
-                   <div class="help_tel"> 
+
+                   <div class="help_tel">
                     <div class="t">订购热线（免长途费）</div>
-                    <div class="b">400 647 1688</div> 
+                    <div class="b">400 647 1688</div>
                     <div class="t">客户服务热线</div>
                     <div class="b">010-82866873 </div>
                    </div>
-                    
+
                 </div>
 
             </div>
@@ -263,7 +263,7 @@
 
 
 
- 	
+
 </div>
 <div class="blank"></div>
 <div style="text-align:center"></div>
@@ -274,34 +274,34 @@
              	<div class="nav_list">
 
 
-                        <a href="http://www.zhongyis.com/article.php?id=2" style="padding:0 3px 0 5px">隐私保护</a>  
-            
-            
+                        <a href="http://www.zhongyis.com/article.php?id=2" style="padding:0 3px 0 5px">隐私保护</a>
+
+
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=5" style="padding:0 3px 0 5px">公司简介</a>  
-            
-            
+                                    <a href="http://www.zhongyis.com/article.php?id=5" style="padding:0 3px 0 5px">公司简介</a>
+
+
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=4" style="padding:0 3px 0 5px">联系我们</a>  
-            
-            
+                                    <a href="http://www.zhongyis.com/article.php?id=4" style="padding:0 3px 0 5px">联系我们</a>
+
+
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=3" style="padding:0 3px 0 5px">在线客服</a>  
-            
-            
+                                    <a href="http://www.zhongyis.com/article.php?id=3" style="padding:0 3px 0 5px">在线客服</a>
+
+
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=1" style="padding:0 3px 0 5px">加盟政策</a>  
-            
-            
+                                    <a href="http://www.zhongyis.com/article.php?id=1" style="padding:0 3px 0 5px">加盟政策</a>
+
+
                           |
-                                    <a href="http://www.zhongyis.com/article.php?id=57" style="padding:0 3px 0 5px">团购优惠</a>  
-            
-            
+                                    <a href="http://www.zhongyis.com/article.php?id=57" style="padding:0 3px 0 5px">团购优惠</a>
+
+
                           |
-                                    <a href="http://www.zhongyis.com/myship.php" style="padding:0 3px 0 5px">配送方式</a>  
-            
-            
-                         
+                                    <a href="http://www.zhongyis.com/myship.php" style="padding:0 3px 0 5px">配送方式</a>
+
+
+
 
 
 </div></div></div></div></body>
