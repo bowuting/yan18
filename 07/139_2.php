@@ -17,6 +17,7 @@ while ($str = fgets($fh)) {
 //}
 
 
+
 //file函数，直接读取文件，按行划分成数组
 //一次读取到内存，大文件慎用，
 //$arr = file('name.txt');
