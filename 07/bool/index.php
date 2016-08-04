@@ -11,11 +11,9 @@ include('./include/init.php');
 
 $goods = new GoodsModel();
 $newList  = $goods->getNew(5);
-
-//$catgoods = $goods->catGoods(1);
-$category = new CatModel();
-$cats = $category->select();//取出所有的栏目来
-print_r($cats);
+$female_id = 4;
+$female_list = $goods->catGoods($female_id);
+print_r($female_list);
 include (ROOT . '/view/front/index.html');
 
 

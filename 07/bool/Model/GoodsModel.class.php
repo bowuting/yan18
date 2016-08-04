@@ -76,13 +76,28 @@ class GoodsModel extends Model{
     //这样写是错的；因为cat_id可能是顶级栏目，顶级栏目是没有商品的
 
     /*取出指定栏目的商品*/
-    // 
-    // public function catGoods($cat_id){
-    //   $category = new CatModel();
-    //   $cats = $category->select();//取出所有的栏目来
-    //   print_r $cats;
-    // //  $category->getCatTree($cats,$cat_id);
-    // }
+    //
+    public function catGoods($cat_id){
+      $category = new CatModel();
+      $cats = $category->select();   //取出所有的栏目来
+      $sons = $category->getCatTree($cats,$cat_id);  //取出指定栏目的子孙栏目
+
+      $sub = array($cat_id);
+
+      if (!empty($sons)) {
+        foreach ($sons as $v) {
+          $sub[] = $v['cat_id'];
+        }
+      }
+
+      $in = implode(',',$sub);
+
+      $sql = 'select goods_id,goods_name,shop_price,market_price,thumb_img from ' . $this->table . ' where cat_id  in ( ' . $in . ' ) order by add_time limit 5';
+
+
+      return $this->db->getAll($sql);
+    }
+
 
 
 

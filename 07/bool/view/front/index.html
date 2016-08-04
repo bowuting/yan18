@@ -279,76 +279,21 @@
 
 
 
-                   		   <div class="goodsItem">
-                        	<div class="goodsPic">
-                            <a class="preview" href="goods.php?id=192"><img alt="纯白斜条棉涤女士衬衫2620" src="./view/front/images/192_thumb_G_1308279122357.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_pname" title="纯白斜条棉涤女士衬衫2620" href="goods.php?id=192">纯白斜条棉涤女士衬衫2...</a></div>
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥84元</font><br>
-                            	 中意价：<font class="f_shop">￥42元                                                                  </font>
-                            </div>
-                        </div>
+                    <?php foreach($$female_list as $g) { ?>
+                                    <div class="goodsItem">
+                    <div class="goodsPic">
+                    <a class="preview" href="goods.php?id=<?php echo $g['goods_id']?>"><img alt="<?php echo $g['goods_name'] ?>" src="<?php echo $g['thumb_img']?>"></a>
+                      </div>
+                      <div class="goodsInfo">
+                        <div class="goodsSn"><a class="f_white" title="" href="goods.php?id=<?php echo $g['goods_id']?>"><?php echo mb_substr($g['goods_name'],0,12,'UTF-8') . '...'; ?></a></div>
+
+                        <span class="f_gray">市场价：</span><font class="f_market">￥<?php echo $g['market_price'] ?></font><br>
+                          中意价：<font class="f_shop">￥<?php echo $g['shop_price'] ?>                                                             </font>
+                      </div>
+                  </div>
+                  <?php } ?>
 
 
-
-
-
-                   		   <div class="goodsItem">
-                        	<div class="goodsPic">
-                            <a class="preview" href="goods.php?id=209"><img alt="枪驳大领面后开叉短款两扣女士正装GC18" src="./view/front/images/209_thumb_G_1301191658576.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_pname" title="枪驳大领面后开叉短款两扣女士正装GC18" href="goods.php?id=209">枪驳大领面后开叉短款两...</a></div>
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥1198元</font><br>
-                            	 中意价：<font class="f_shop">￥599元                                                                  </font>
-                            </div>
-                        </div>
-
-
-
-
-
-                   		   <div class="goodsItem">
-                        	<div class="goodsPic">
-                            <a class="preview" href="goods.php?id=302"><img alt="双层青果领后腰褶摆一扣女士正装套裤/黑色GC22" src="./view/front/images/302_thumb_G_1346503936019.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_pname" title="双层青果领后腰褶摆一扣女士正装套裤/黑色GC22" href="goods.php?id=302">双层青果领后腰褶摆一扣...</a></div>
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥998元</font><br>
-                            	 中意价：<font class="f_shop">￥499元                                                                  </font>
-                            </div>
-                        </div>
-
-
-
-
-
-                   		   <div class="goodsItem">
-                        	<div class="goodsPic">
-                            <a class="preview" href="goods.php?id=303"><img alt="泡泡袖后中衩一扣女士正装套裤/黑色GC23" src="./view/front/images/303_thumb_G_1346504995304.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_pname" title="泡泡袖后中衩一扣女士正装套裤/黑色GC23" href="goods.php?id=303">泡泡袖后中衩一扣女士正...</a></div>
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥698元</font><br>
-                            	 中意价：<font class="f_shop">￥349元                                                                  </font>
-                            </div>
-                        </div>
-
-
-
-
-
-                   		   <div class="goodsItem">
-                        	<div class="goodsPic">
-                            <a class="preview" href="goods.php?id=305"><img alt="枪驳大领面简约2扣女士正装套裙/黑色815" src="./view/front/images/305_thumb_G_1346501380926.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_pname" title="枪驳大领面简约2扣女士正装套裙/黑色815" href="goods.php?id=305">枪驳大领面简约2扣女士...</a></div>
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥998元</font><br>
-                            	 中意价：<font class="f_shop">￥499元                                                                  </font>
-                            </div>
-                        </div>
 
 
 
