@@ -26,7 +26,7 @@
 
 <?php } else { ?>
  您好，<font class="f_orange_bold"><?php echo$_SESSION['username'] ?></font>, 欢迎您回来！
-<a href="#">用户中心</a>|
+<a href="login.php">用户中心</a>|
  <a href="logout.php">退出</a>
 <?php } ?>
 
@@ -226,61 +226,23 @@
   <div class="lib_mid">
                 	<div id="show_new_area" class="tabItem">
                                     	<div class="grid">
+
+                          <?php foreach($newList as $g) { ?>
                                         	<div class="goodsItem">
                         	<div class="goodsPic">
-                        	<a class="preview" href="goods.php?id=66"><img alt="两扣亮黑灰色男士小西服套装D001" src="./view/front/images/66_thumb_G_1301142081870.jpg"></a>
+                        	<a class="preview" href="goods.php?id=<?php echo $g['goods_id']?>"><img alt="<?php echo $g['goods_name'] ?>" src="<?php echo $g['thumb_img']?>"></a>
                             </div>
                             <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_white" title="两扣亮黑灰色男士小西服套装D001" href="goods.php?id=66">两扣亮黑灰色男士小西服...</a></div>
+                            	<div class="goodsSn"><a class="f_white" title="" href="goods.php?id=<?php echo $g['goods_id']?>"><?php echo mb_substr($g['goods_name'],0,12,'UTF-8') . '...'; ?></a></div>
 
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥1198元</font><br>
-                                中意价：<font class="f_shop">￥599元                                                              </font>
+                            	<span class="f_gray">市场价：</span><font class="f_market">￥<?php echo $g['market_price'] ?></font><br>
+                                中意价：<font class="f_shop">￥<?php echo $g['shop_price'] ?>                                                             </font>
                             </div>
                         </div>
-                                         	<div class="goodsItem">
-                        	<div class="goodsPic">
-                        	<a class="preview" href="goods.php?id=208"><img alt="平驳圆领角简约1扣女士正装/黑色GC19" src="./view/front/images/208_thumb_G_1301141183961.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_white" title="平驳圆领角简约1扣女士正装/黑色GC19" href="goods.php?id=208">平驳圆领角简约1扣女士...</a></div>
+                        <?php } ?>
 
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥998元</font><br>
-                                中意价：<font class="f_shop">￥499元                                                              </font>
-                            </div>
-                        </div>
-                                         	<div class="goodsItem">
-                        	<div class="goodsPic">
-                        	<a class="preview" href="goods.php?id=104"><img alt="亮乳白蝴蝶挂扣领袖带褶短袖正装套裙512-3" src="./view/front/images/104_thumb_G_1301129380544.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_white" title="亮乳白蝴蝶挂扣领袖带褶短袖正装套裙512-3" href="goods.php?id=104">亮乳白蝴蝶挂扣领袖带褶...</a></div>
 
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥698元</font><br>
-                                中意价：<font class="f_shop">￥349元                                                              </font>
-                            </div>
-                        </div>
-                                         	<div class="goodsItem">
-                        	<div class="goodsPic">
-                        	<a class="preview" href="goods.php?id=204"><img alt="棉涤泡泡袖修身女士正装衬衫/灰条纹  T002" src="./view/front/images/204_thumb_G_1301023973504.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_white" title="棉涤泡泡袖修身女士正装衬衫/灰条纹  T002" href="goods.php?id=204">棉涤泡泡袖修身女士正装...</a></div>
 
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥258元</font><br>
-                                中意价：<font class="f_shop">￥129元                                                              </font>
-                            </div>
-                        </div>
-                                         	<div class="goodsItem">
-                        	<div class="goodsPic">
-                        	<a class="preview" href="goods.php?id=207"><img alt="枪驳大领腰带装饰后摆褶边时尚1扣女士正装/亮黑色GC20" src="./view/front/images/207_thumb_G_1301142749758.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	<div class="goodsSn"><a class="f_white" title="枪驳大领腰带装饰后摆褶边时尚1扣女士正装/亮黑色GC20" href="goods.php?id=207">枪驳大领腰带装饰后摆褶...</a></div>
-
-                            	<span class="f_gray">市场价：</span><font class="f_market">￥1598元</font><br>
-                                中意价：<font class="f_shop">￥799元                                                              </font>
-                            </div>
-                        </div>
 
                     </div>
                     					</div>

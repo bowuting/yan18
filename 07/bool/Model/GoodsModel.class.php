@@ -55,8 +55,35 @@ class GoodsModel extends Model{
         $sn = 'BL' . date('Ymd') . mt_rand(10000,99999);
 
         $sql = 'select count(*) from ' . $this->table . " where goods_sn='" . $sn . "'";
-        
+
         return $this->db->getOne($sql)?$this->createSn():$sn;//digui
     }
-}
 
+    /*
+    取出指定条数的新品
+    */
+
+    public function getNew($n = 5){
+      $sql = 'select goods_id,goods_name,shop_price,market_price,thumb_img from ' . $this->table . ' order by add_time limit 5';
+
+      return $this->db->getAll($sql);
+
+    }
+
+    //取出指定栏目的商品
+    //$cat_id = $_GET['cat_id'];
+    //$sql  = select ... from goods where cat_id=$catid;
+    //这样写是错的；因为cat_id可能是顶级栏目，顶级栏目是没有商品的
+
+    /*取出指定栏目的商品*/
+    // 
+    // public function catGoods($cat_id){
+    //   $category = new CatModel();
+    //   $cats = $category->select();//取出所有的栏目来
+    //   print_r $cats;
+    // //  $category->getCatTree($cats,$cat_id);
+    // }
+
+
+
+}
