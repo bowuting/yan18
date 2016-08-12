@@ -1,6 +1,6 @@
 <?php
 
-$tittle = "两会召开";
+$title = "两会召开";
 $content = "nice";
 
 
@@ -11,7 +11,7 @@ $content = "nice";
 <html>
   <head>
     <meta charset="utf-8">
-    <title><?php echo $tittle; ?></title>
+    <title><?php echo $title; ?></title>
   </head>
   <body>
     <h2><?php echo $content; ?></h2>

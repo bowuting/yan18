@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title><?php echo $this->_tpl_var['tittle']; ?></title>
+    <title><?php echo $this->_tpl_var['title']; ?></title>
   </head>
   <body>
     <h2>
