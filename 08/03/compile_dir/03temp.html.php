@@ -5,8 +5,8 @@
     <title><?php echo $this->_tpl_var['tittle']; ?></title>
   </head>
   <body>
-    <p>
+    <h2>
     <?php echo $this->_tpl_var['content']; ?>
-    </p>
+</h2>
   </body>
 </html>

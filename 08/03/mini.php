@@ -4,6 +4,7 @@
  *
  */
 class Mini {
+
   public $template_dir =  'template_dir';  //模板文件所在目录
   public $compile_dir = 'compile_dir';    //模板编译后存放的位置
 
@@ -29,15 +30,24 @@ class Mini {
   public function compile($template){
 
     //读出模板内容
-    $source = file_get_contents($this->template_dir . '/' . $template);
+    $temp = $this->template_dir . '/' . $template;
+    $source = file_get_contents($temp);
     //echo $source;
+
+    //再把编译后的文件班保存起来，
+    $comp = $this->compile_dir . '/' . $template . '.php';
+
+    //判断模板是否存在
+    if (file_exists($comp) && filemtime($temp) < filemtime($comp)) {
+        return $comp;
+    }
 
     $source = str_replace('{$' , '<?php echo $this->_tpl_var[\'',$source);
     $source = str_replace("}" , '\']; ?>',$source);
     //echo $source;
 
-    //再把编译后的文件班保存起来，
-    $comp = $this->compile_dir . '/' . $template . '.php';
+
+
     file_put_contents($comp,$source);
     return $comp;
 
