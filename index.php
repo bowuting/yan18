@@ -1,6 +1,6 @@
 <?php
 
-echo "dad";
+echo "十八哥PHP";
 phpinfo();
 
 
