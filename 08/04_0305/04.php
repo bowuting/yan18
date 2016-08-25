@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 /*
 在 模板中 {$title}  则说明$titke标签放在被assign赋过值，因此能显示
 思考：smarty的标题变量.除了assign 还能有哪些?
@@ -12,6 +13,8 @@ smarty标签的变量,来源于3个部分
 
 
 */
+=======
+>>>>>>> a8dcbf77b35b32c2e2e98d4022ef6ff3b6d7ff74
 
 require('../Smarty3/libs/Smarty.class.php');
 
@@ -23,6 +26,7 @@ $smarty = new Smarty();
 $smarty->template_dir = './temp';
 $smarty->compile_dir  = './comp';
 
+<<<<<<< HEAD
 
 //三种来源之assign
 $smarty->assign('name','罗隐');
@@ -37,6 +41,29 @@ $smarty->assign('poem','我未成名君未嫁,可能俱是不如人');
 
 
 $smarty->display('04.html');
+=======
+$smarty->config_dir = './conf';
+
+//3种变量来源之 系统保留 不用赋值，自动获取
+
+define('HEI',8846);
+
+
+$smarty->display('04.html');
+
+
+//3种变量之 配置文件中的配置变量
+/*
+  1、配置文件一般以.conf做后缀
+  2、配置文件的写法是：
+    选项1 = 值1
+    选项2 = 值2
+  3、配置smarty的config_dir 并把配置文件放在该目录下
+*/
+
+
+
+>>>>>>> a8dcbf77b35b32c2e2e98d4022ef6ff3b6d7ff74
 
 
 
