@@ -13,8 +13,6 @@ smarty标签的变量,来源于3个部分
 
 
 */
-=======
->>>>>>> a8dcbf77b35b32c2e2e98d4022ef6ff3b6d7ff74
 
 require('../Smarty3/libs/Smarty.class.php');
 
@@ -26,7 +24,7 @@ $smarty = new Smarty();
 $smarty->template_dir = './temp';
 $smarty->compile_dir  = './comp';
 
-<<<<<<< HEAD
+
 
 //三种来源之assign
 $smarty->assign('name','罗隐');
@@ -41,7 +39,7 @@ $smarty->assign('poem','我未成名君未嫁,可能俱是不如人');
 
 
 $smarty->display('04.html');
-=======
+
 $smarty->config_dir = './conf';
 
 //3种变量来源之 系统保留 不用赋值，自动获取
@@ -62,8 +60,6 @@ $smarty->display('04.html');
 */
 
 
-
->>>>>>> a8dcbf77b35b32c2e2e98d4022ef6ff3b6d7ff74
 
 
 
