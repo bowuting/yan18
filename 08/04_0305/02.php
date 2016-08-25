@@ -11,8 +11,7 @@ $smarty = new Smarty();
 $smarty->template_dir = './temp';
 $smarty->compile_dir  = './comp';
 
-$smarty->left_delimiter = '{>';
-$smarty->right_delimiter = '<}';
+
 
 //从数据库中取出会员信息，往往是数组形式
 $user = array('name'=>'刘备','age'=>'28','weapon'=>'双剑');
