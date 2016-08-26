@@ -1,23 +1,23 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2016-08-16 11:59:07
+<?php /* Smarty version Smarty-3.1-DEV, created on 2016-08-25 12:38:46
          compiled from "./temp/01.html" */ ?>
 <?php /*%%SmartyHeaderCode:94253808857b28e263f7655-17175422%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' =>
+  'file_dependency' => 
   array (
-    '7ad7e6a3f3dfa498c89c91aa77ee143e2ec2c001' =>
+    '7ad7e6a3f3dfa498c89c91aa77ee143e2ec2c001' => 
     array (
       0 => './temp/01.html',
-      1 => 1471319945,
+      1 => 1472097652,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '94253808857b28e263f7655-17175422',
-  'function' =>
+  'function' => 
   array (
   ),
   'version' => 'Smarty-3.1-DEV',
   'unifunc' => 'content_57b28e26439639_43605267',
-  'variables' =>
+  'variables' => 
   array (
     'man' => 0,
   ),
@@ -34,7 +34,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
         <?php echo $_smarty_tpl->tpl_vars['man']->value->sayhi();?>
 
-        <!-- <?php print_r($_smarty_tpl->tpl_vars['man']->value); ?> -->
 
     </h2>
   </body>
